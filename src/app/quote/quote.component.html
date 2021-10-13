@@ -17,6 +17,7 @@
     <div class="row">
       <div class="col-md-6">
         <div *ngFor='let quote of quotes;let i = index'>
+            <li appStrikethrough>{{quote.name}} posted on {{quote.completeDate|date|uppercase}}</li> 
           <div>
             <h4 id={{i}}>{{quote.name}}</h4>
             <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
