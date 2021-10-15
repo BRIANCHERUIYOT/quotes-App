@@ -3,7 +3,7 @@
 
 
   <div class="container">
-    <h1 class="text-center">MY QUOTES APP</h1>
+    <h1 class="text-center txt">MY QUOTES APP</h1>
     <hr>
   
     <div class="row">
@@ -17,7 +17,7 @@
             <h4 id={{i}}>{{quote.name}}</h4>
             <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
           </div> 
-  
+  <!-- <div *ngif="details"></div> -->
           <div *ngIf='quote.showDescription'>
             <app-quote-details  *ngIf = 'quote.showDescription' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-details>
           </div>
