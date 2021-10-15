@@ -1,16 +1,19 @@
-<!-- <p> -->
-    
-  <!-- </p> -->
-  <!-- <p>{{goal.description}}</p> -->
-<!-- <p>this quote was posted on<br> -->
-  <!-- {{quote.completeDate|dateCount}} days</p> -->
-  <!-- <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button> -->
 
   <div class="card" style="width: 18rem;">
     <div class="card-body">
       <p class="card-text">{{quote.description}}</p>
+      <div class="icons mt-4 mb-1">
       <p>this quote was posted on<br>
         {{quote.completeDate|dateCount}} days</p>
         <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
+        <span style="font-size: 1.1em; color: rgb(230, 16, 16);" class="like" (click)="upVote(true);">
+          <i class="fa fa-thumbs-up"></i> {{quote.upvotes}}
+        </span>
+        <span style="font-size: 1.1em; color: rgb(13, 10, 194);" class="dislike" (click)= "downVote(true)">
+          <i class="fa fa-thumbs-down"></i> {{quote.downvotes}}
+        </span>
+      </div>
     </div>
   </div>
+
+ 
