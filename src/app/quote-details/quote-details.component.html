@@ -1,6 +1,16 @@
-<p>
-    {{quote.description}}
-  </p>
+<!-- <p> -->
+    
+  <!-- </p> -->
   <!-- <p>{{goal.description}}</p> -->
-<p>this quote was posted on{{quote.completeDate|dateCount}} days</p>
-  <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
+<!-- <p>this quote was posted on<br> -->
+  <!-- {{quote.completeDate|dateCount}} days</p> -->
+  <!-- <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button> -->
+
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <p class="card-text">{{quote.description}}</p>
+      <p>this quote was posted on<br>
+        {{quote.completeDate|dateCount}} days</p>
+        <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
+    </div>
+  </div>
