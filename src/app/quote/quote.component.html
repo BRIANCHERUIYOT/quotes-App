@@ -19,7 +19,7 @@
           </div> 
   <!-- <div *ngif="details"></div> -->
           <div *ngIf='quote.showDescription'>
-            <app-quote-details  *ngIf = 'quote.showDescription' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-details>
+            <app-quote-details  *ngIf = 'quote.showDescription' [quote]='quote' (isComplete) = 'completeQuote($event,i)' (isUpvotes) = 'upvotesQuote($event,i)' (isDownvotes) = 'downvotesQuote($event,i)'></app-quote-details>
           </div>
         </div>
       </div>

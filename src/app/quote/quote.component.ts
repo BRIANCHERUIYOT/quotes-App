@@ -44,13 +44,13 @@ export class QuoteComponent implements OnInit {
     }
   }
 
-  quoteUpvote(isUpvote:boolean,index:number){
-    if(isUpvote){
+  upvotesQuote(isUpvotes:boolean,index:number){
+    if(isUpvotes){
       this.quotes[index].upvotes +=1;
     }
   }
-  quoteDownvote(isDownvote:boolean,index:number){
-    if(isDownvote){
+  downvotesQuote(isDownvotes:boolean,index:number){
+    if(isDownvotes){
       this.quotes[index].downvotes +=1;
     }
   }

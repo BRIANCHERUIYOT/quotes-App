@@ -3,11 +3,14 @@
     <div class="card-body">
       <p class="card-text">{{quote.description}}</p>
         <div class="icons mt-4 mb-1">
-        <button class="btn btn-secondary"class="like" (click)="upVote(true);">{{quote.upvotes}}
-        </button>
-        <button class="btn btn-primary"class="dislike" (click)= "downVote(true)">
-             {{quote.downvotes}}
-        </button>
+          <!-- <span style="font-size: 1.1em; color: green;" class="like" (click)="upVotes(true)">
+            <i class="fa fa-thumbs-up"></i> {{quote.upvotes}}
+          </span> -->
+        <button class="btn btn-secondary"class="like" (click)="upVotes(true);">UPVOTE
+        </button>{{quote.upvotes}}
+        <button class="btn btn-primary"class="dislike" (click)= "downVotes(true)">
+             DOWNVOTE
+        </button>{{quote.downvotes}}
         <p>this quote was posted on<br>
           {{quote.completeDate|dateCount}} days</p> 
           <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
